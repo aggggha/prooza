@@ -40,7 +40,7 @@ def rag_chain_func():
     # Alternatively you could use: https://huggingface.co/CompendiumLabs/bge-base-en-v1.5-gguf
     # embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
     embedding_model = HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
-    if os.path.exists('/datasetan'):
+    if os.path.exists(INDEX_DIR):
         print("Loading existing FAISS index...")
         vectorDB = FAISS.load_local(
             INDEX_DIR, embedding_model, allow_dangerous_deserialization=True

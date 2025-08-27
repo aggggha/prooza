@@ -41,6 +41,7 @@ ollama run gemma3:1b
 ollama pull gemma3:1b
 ```
 
+You might wanna create `datasets/` folder and fill the folder with necessary training files.
 
 
 ### 2\. Clone the Repository
